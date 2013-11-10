@@ -23,13 +23,41 @@ Fork this project, modify the cookiecutter.json (on your own branch)
 cookiecutter https://github.com/mahmoudimus/cookiecutter-slim-berkshelf-vagrant.git
 ```
 
-This will close `cookiecutter-slim-berkshelf-vagrant` in your `~/.cookiecutter` repository.
+This will clone `cookiecutter-slim-berkshelf-vagrant` in your `~/.cookiecutter` repository.
+
+If you want to clone the repository again (to create a new cookbook), do:
+
+```bash
+cookiecutter ~/.cookiecutters/cookiecutter-slim-berkshelf-vagrant
+```
+
+### Aliasing berks
+
+Put this in your `.bashrc` or `.zshrc`
+
+```bash
+alias sane-berks-cookbook='cookiecutter ~/.cookiecutters/cookiecutter-slim-berkshelf-vagrant'
+```
+
+Then from your prompt:
+
+```bash
+sane-berks-cookbook
+```
+
+and follow the prompts.
 
 ### Create a cookbook
 
 ```bash
 cd ${DIRECTORY_YOU_WISH_TO_CREATE_THE_COOKBOOK_IN}
-cookiecutter cookiecutter-slim-berkshelf-vagrant
+cookiecutter ~/.cookbooks/cookiecutter-slim-berkshelf-vagrant
+```
+
+OR if you've aliased berks
+
+```bash
+sane-berks-cookbook
 ```
 
 Follow the prompts. Enjoy.
