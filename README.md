@@ -15,7 +15,7 @@ Luckily for those of us that are impatient, there's [cookiecutter](https://githu
 
 ## Prompts
 
-Fork this project, modify the cookiecutter.json (on your own branch)
+Fork this project, modify the `cookiecutter.json` (on your own branch)
 
 ## Usage
 
@@ -54,7 +54,7 @@ cd ${DIRECTORY_YOU_WISH_TO_CREATE_THE_COOKBOOK_IN}
 cookiecutter ~/.cookbooks/cookiecutter-slim-berkshelf-vagrant
 ```
 
-OR if you've aliased berks
+**OR if you've aliased berks**
 
 ```bash
 sane-berks-cookbook
