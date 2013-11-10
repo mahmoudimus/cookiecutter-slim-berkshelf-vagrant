@@ -60,7 +60,13 @@ cookiecutter ~/.cookbooks/cookiecutter-slim-berkshelf-vagrant
 sane-berks-cookbook
 ```
 
-Follow the prompts. Enjoy.
+Follow the prompts.
+
+```bash
+vagrant up
+```
+
+Will launch a new vagrant machine.
 
 Remember, you can modify your `cookiecutter.json` file to not be
 prompted by a bunch of stupid questions. Read the installation
@@ -69,3 +75,11 @@ instructions.
 ## Contribution
 
 Contribute fixes to making streamlined cookbooks / vagrant files for the community!
+
+## TODO
+
+- Add a pre gen hook to install vagrant, if missing
+- Add a post gen hook to install vagrant-berkshelf, if missing
+- Add a post gen hook to install vagrant-aws, if missing
+- Add a post gen hook to install vagrant-omnibus, if missing
+- Add a post gen hook to install vagrant-butcher, if missing
